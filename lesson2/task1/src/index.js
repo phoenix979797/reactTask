@@ -1,15 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-
 
 const rootElement = document.querySelector("#root");
 const renderGreeting = (elem) => {
   const element = (
-    <div className="greeting">
-      <div className="greeting__title">Hello, world!</div>
-      <div className="greeting__text">I'm learning React</div>
-    </div>
+    <>
+      <h1>Search Form</h1>
+      <div>
+        <input type="text" />
+        <button>Search</button>
+      </div>
+    </>
   );
 
   ReactDOM.render(element, elem);
