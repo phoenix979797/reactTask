@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import './index.scss'
-import { Greeting } from "./Search.jsx";
+import Greeting from "./Search.jsx";
 import './search.scss'
 
 

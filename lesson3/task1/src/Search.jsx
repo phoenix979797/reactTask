@@ -1,5 +1,5 @@
 import React from "react";
-export default Search = (props) => {
+const Search = (props) => {
     return (<div className="search">
         <h1 className="search__title">{`Hello, ${props.name}. What to search for you?`}</h1>
         <div className="search__field">
@@ -8,3 +8,5 @@ export default Search = (props) => {
         </div>
     </div>)
 };
+
+export default Search;
