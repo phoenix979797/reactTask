@@ -4,7 +4,7 @@ import moment from "moment";
 const formatDate = date => moment(date).format("DD MMM YYYY");
 
 function Profile(props) {
-    console.log(props.user.firstName);
+   
     return (
         <>
             <div className="profile__name">
