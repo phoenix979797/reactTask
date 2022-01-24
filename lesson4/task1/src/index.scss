@@ -14,11 +14,32 @@
     align-items: center;
   }
   
-  .toggler {
-    padding: 8px;
-    border: 2px solid #eee;
-    border-radius: 8px;
-    cursor: pointer;
-    outline: none;
+  .picker {
+    &__title {
+      text-align: center;
+      height: 32px;
+    }
+  
+    &__button {
+      width: 48px;
+      height: 48px;
+      margin: 16px;
+      border: 2px solid #eee;
+      border-radius: 8px;
+      cursor: pointer;
+      outline: none;
+  
+      &_coral {
+        background-color: #ff7f50;
+      }
+  
+      &_aqua {
+        background-color: #00ffff;
+      }
+  
+      &_bisque {
+        background-color: #ffe4c4;
+      }
+    }
   }
   

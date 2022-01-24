@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Counter from "./Toggler";
+import Counter from "./ColorPicker";
 import './index.scss';
 
 const rootElement = document.querySelector('#root');
