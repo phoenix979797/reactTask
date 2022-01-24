@@ -14,26 +14,14 @@ body {
     align-items: center;
 }
 
-.counter {
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.colors {
     &__button {
         width: 48px;
         height: 48px;
-        border: 2px solid grey;
+        margin: 16px;
+        border: 2px solid #eee;
         border-radius: 8px;
-        background: transparent;
-        font-weight: 700;
-        font-size: 24px;
         cursor: pointer;
         outline: none;
     }
-
-    &__value {
-        margin: 16px;
-    }
 }
- 
