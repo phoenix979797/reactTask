@@ -1,4 +1,6 @@
 import React from "react";
-import Counter from "./Auth";
-export default () => (<button onClick={Counter.handleLogin}> Login</ button>)
+
+
+export default (props) => <button onClick={props.onLogin}>Login</button>
+
 
