@@ -6,10 +6,7 @@ const Mailbox = ({ unreadMessages }) => {
     return (
         <div className="mailbox">
             <span className="mailbox__text">Messages</span>
-            {numberOfUnreadMessages > 0
-                ? <span className="mailbox__count">{numberOfUnreadMessages}</span>
-                : <></>
-            }
+            {numberOfUnreadMessages > 0 && <span className="mailbox__count">{numberOfUnreadMessages}</span>}
         </div >
     );
 };

@@ -8,4 +8,4 @@ const rootElement = document.querySelector('#root');
 
 
 
-ReactDOM.render(<Counter unreadMessages = {['h', 'f']}/>, rootElement);
+ReactDOM.render(<Counter unreadMessages={['h', 'f']} />, rootElement);
