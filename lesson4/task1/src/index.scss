@@ -13,28 +13,20 @@ body {
   align-items: center;
 }
 
-.panel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+.mailbox {
+  &__text {
+    text-transform: uppercase;
+  }
 
-.login {
-  background-color: green;
-}
-
-.logout {
-  background-color: cornflowerblue;
-}
-
-.btn {
-  height: 48px;
-  color: #fff;
-  border-radius: 8px;
-  width: 120px;
-  outline: none;
-  border: none;
-  text-transform: uppercase;
-  padding: 8px;
-  cursor: pointer;
+  &__count {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    background-color: #000;
+    margin-left: 16px;
+  }
 }

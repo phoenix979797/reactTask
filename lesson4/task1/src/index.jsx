@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Counter from "./Auth";
+import Counter from "./Mailbox.jsx";
 import './index.scss';
 
 const rootElement = document.querySelector('#root');
@@ -8,4 +8,4 @@ const rootElement = document.querySelector('#root');
 
 
 
-ReactDOM.render(<Counter />, rootElement);
+ReactDOM.render(<Counter unreadMessages = {['h', 'f']}/>, rootElement);
