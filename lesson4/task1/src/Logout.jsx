@@ -1,6 +1,6 @@
 import React from "react";
 
 
-export default (props) => <button className="logout btn " onClick={props.onLogout}>Logout</button>
+export default ({ onLogout }) => <button className="logout btn " onClick={onLogout}>Logout</button>
 
 
