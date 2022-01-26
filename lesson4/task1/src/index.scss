@@ -13,25 +13,23 @@ body {
   align-items: center;
 }
 
-$blue: #6495ed;
+.status {
+  border: 2px solid #000;
+  height: 32px;
+  border-radius: 16px;
+  overflow: hidden;
 
-.message {
-  border: 2px solid $blue;
-  border-radius: 8px;
-  padding: 8px;
-  margin-bottom: 16px;
-}
+  &__btn {
+    height: 100%;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 8px;
+  }
 
-.btn {
-  height: 48px;
-  color: #fff;
-  border-radius: 8px;
-  width: 120px;
-  outline: none;
-  border: none;
-  text-transform: uppercase;
-  padding: 8px;
-  cursor: pointer;
-  background-color: $blue;
-  margin: 8px;
+  &__text {
+    padding: 0 8px;
+    line-height: 28px;
+  }
 }
