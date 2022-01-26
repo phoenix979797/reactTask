@@ -10,7 +10,7 @@ class Auth extends Component {
         super(props);
 
         this.state = {
-            isLoggedIn: true
+            isLoggedIn: false
         }
     }
 
