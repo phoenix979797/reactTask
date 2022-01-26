@@ -13,20 +13,25 @@ body {
   align-items: center;
 }
 
-.mailbox {
-  &__text {
-    text-transform: uppercase;
-  }
+$blue: #6495ed;
 
-  &__count {
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 32px;
-    color: #fff;
-    background-color: #000;
-    margin-left: 16px;
-  }
+.message {
+  border: 2px solid $blue;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  height: 48px;
+  color: #fff;
+  border-radius: 8px;
+  width: 120px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  padding: 8px;
+  cursor: pointer;
+  background-color: $blue;
+  margin: 8px;
 }
