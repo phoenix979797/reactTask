@@ -1,11 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Counter from "./Status.jsx";
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './index.scss';
+import App from './Auth.jsx';
 
 const rootElement = document.querySelector('#root');
 
-
-
-
-ReactDOM.render(<Counter isOnline={false} />, rootElement);
+ReactDOM.render(<App />, rootElement);

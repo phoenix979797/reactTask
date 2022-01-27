@@ -13,23 +13,39 @@ body {
   align-items: center;
 }
 
-.status {
-  border: 2px solid #000;
-  height: 32px;
-  border-radius: 16px;
-  overflow: hidden;
+.login {
+  background-color: green;
+}
 
-  &__btn {
-    height: 100%;
-    border: none;
-    background-color: #000;
-    color: #fff;
-    cursor: pointer;
-    padding: 0 8px;
-  }
+.logout {
+  background-color: cornflowerblue;
+}
 
-  &__text {
-    padding: 0 8px;
-    line-height: 28px;
+@keyframes spin {
+  from {
+      transform: rotate(0deg); 
   }
+  to {
+      transform: rotate(360deg); 
+  }
+}
+
+.spinner {
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-left-color: transparent;
+  animation: spin .5s infinite linear;
+  border-radius: 50%;
+}
+
+.btn {
+  height: 48px;
+  color: #fff;
+  border-radius: 8px;
+  width: 120px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  padding: 8px;
+  cursor: pointer;
 }
