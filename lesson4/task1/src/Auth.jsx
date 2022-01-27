@@ -1,7 +1,7 @@
 import React from "react";
 import Logout from './Logout.jsx'
 import Login from './Login.jsx'
-import Spiner from './Spiner.jsx'
+import Spiner from './Spinner.jsx'
 
 class Auth extends React.Component {
     
