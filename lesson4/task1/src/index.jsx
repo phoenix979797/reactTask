@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import App from './Auth.jsx';
+import List from './NumbersList';
+
 
 const rootElement = document.querySelector('#root');
 
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<List numbers={[2, 3, 4, 5, 6]} />, rootElement);
+
