@@ -14,7 +14,7 @@ class UserList extends Component {
     }
 
     render() {
-        let usersList = this.props.users;
+        const usersList = this.props.users;
         if (this.state.sorting) {
             const usersList = this.props.users
                 .sort((a, b) => this.state.sorting === 'asc' ? a.age - b.age : b.age - a.age)
