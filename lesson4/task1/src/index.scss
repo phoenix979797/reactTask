@@ -13,32 +13,44 @@ body {
   align-items: center;
 }
 
-.users {
+.transactions {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  max-width: 600px;
+  width: 100%;
 }
 
-.user {
+.transaction {
   margin: 8px;
-  width: 150px;
   display: flex;
+  height: 32px;
+  line-height: 32px;
+  border-bottom: 1px solid #eee;
 
-  &__age {
+  &__date {
+    flex: 1;
+    opacity: 0.5;
+  }
+
+  &__time {
+    flex: 1;
+    font-weight: 700;
+  }
+
+  &__assets {
     font-weight: 700;
     opacity: 0.5;
-    margin-left: auto;
+    flex: 1;
   }
-}
 
-.btn {
-  height: 32px;
-  color: #fff;
-  border-radius: 8px;
-  width: 64px;
-  outline: none;
-  border: none;
-  text-transform: uppercase;
-  padding: 8px;
-  cursor: pointer;
-  background-color: green;
+  &__rate {
+    flex: 1;
+    text-align: right;
+  }
+
+  &__amount {
+    flex: 1;
+    text-align: right;
+  }
 }
