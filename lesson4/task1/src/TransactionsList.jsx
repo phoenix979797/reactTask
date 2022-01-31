@@ -7,9 +7,9 @@ import Transaction from './Transaction';
 const transactions = ({ transactions }) => {
   const transactionList = [...transactions]
     return (
-        <ul className='transactions'>
+        <ol className='transactions'>
         {transactionList.map(e => <Transaction key={e.id} {...e}/>)}
-        </ul>
+        </ol>
     )
 
 };
