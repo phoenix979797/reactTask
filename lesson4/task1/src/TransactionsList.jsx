@@ -4,7 +4,7 @@ import Transaction from './Transaction';
 // import transaction from './Transaction';
 
 
-const transactions = ({ transactions }) => {
+const Transactions = ({ transactions }) => {
   const transactionList = [...transactions]
     return (
         <ul className='transactions'>
@@ -14,4 +14,4 @@ const transactions = ({ transactions }) => {
 
 };
 
-export default transactions;
+export default Transactions;

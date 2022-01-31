@@ -4,7 +4,7 @@ const formatDate = date => moment(date).format("DD MMM");
 const formatTime = date => moment(date).format("HH:mm");
 const formaterCurrency = new Intl.NumberFormat('en-GB');
 
-const transaction = ({ from, to, amount, rate, time}) => {
+const Transaction = ({ from, to, amount, rate, time}) => {
     return (<li className='transaction'>
         <span className="transaction__date">{formatDate(time)}</span>
         <span className="transaction__time">{formatTime(time)}</span>
@@ -14,4 +14,4 @@ const transaction = ({ from, to, amount, rate, time}) => {
     </li>);
 }
 
-export default transaction;
+export default Transaction;
