@@ -14,10 +14,9 @@ class UserList extends Component {
     }
 
     render() {
-        const usersList = this.props.users;
+        const usersList = [...this.props.users];
         if (this.state.sorting) {
-            const usersList = this.props.users
-                .sort((a, b) => this.state.sorting === 'asc' ? a.age - b.age : b.age - a.age)
+            usersList.sort((a, b) => this.state.sorting === 'asc' ? a.age - b.age : b.age - a.age)
         }
         return (<div>
             <button className='btn' onClick={this.toggleSorting} >{this.state.sorting || '-'}</button>
