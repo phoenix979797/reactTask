@@ -21,7 +21,7 @@ class Life extends React.Component {
         console.log('componentDidUpdate(prevProps, prevState): some updates based on new props');
     }
 
-    componentWillUnMount() {
+    componentWillUnmount() {
         console.log('componentWillUnmount(): cleanup before DOM related to component will be removed');
     }
 
