@@ -13,39 +13,38 @@ body {
   align-items: center;
 }
 
-.login {
-  background-color: green;
+.users {
+  list-style-type: none;
+  padding: 0;
 }
 
-.logout {
-  background-color: cornflowerblue;
-}
-
-@keyframes spin {
-  from {
-      transform: rotate(0deg); 
+.user {
+  margin: 8px;
+  width: 150px;
+  display: flex;
+  
+  &__age {
+      font-weight: 700;
+      opacity: 0.5;
+      margin-left: auto;
   }
-  to {
-      transform: rotate(360deg); 
-  }
 }
 
-.spinner {
-  display: inline-block;
-  border: 3px solid #ccc;
-  border-left-color: transparent;
-  animation: spin .5s infinite linear;
-  border-radius: 50%;
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .btn {
-  height: 48px;
+  height: 32px;
   color: #fff;
   border-radius: 8px;
-  width: 120px;
+  width: 64px;
   outline: none;
   border: none;
   text-transform: uppercase;
   padding: 8px;
   cursor: pointer;
+  background-color: green;
 }
