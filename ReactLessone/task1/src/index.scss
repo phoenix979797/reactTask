@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -9,48 +5,30 @@ body {
 #root {
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.transactions {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  max-width: 600px;
-  width: 100%;
-}
-
-.transaction {
-  margin: 8px;
+.clock {
   display: flex;
-  height: 32px;
-  line-height: 32px;
-  border-bottom: 1px solid #eee;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
 
-  &__date {
-    flex: 1;
-    opacity: 0.5;
+  &__location {
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    margin-bottom: 8px;
+    font-weight: 700;
   }
 
   &__time {
-    flex: 1;
-    font-weight: 700;
-  }
-
-  &__assets {
-    font-weight: 700;
-    opacity: 0.5;
-    flex: 1;
-  }
-
-  &__rate {
-    flex: 1;
-    text-align: right;
-  }
-
-  &__amount {
-    flex: 1;
-    text-align: right;
+    border: 3px solid #ff7f50;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
   }
 }
