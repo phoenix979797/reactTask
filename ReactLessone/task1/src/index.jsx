@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import User from './User.jsx';
+import ConnectionStatus from './ConnectionStatus.jsx';
 
 
 
 
 const rootElement = document.querySelector('#root');
 
-ReactDOM.render(<User userId="google" />, rootElement);
+ReactDOM.render(<ConnectionStatus userId="google" />, rootElement);
 
