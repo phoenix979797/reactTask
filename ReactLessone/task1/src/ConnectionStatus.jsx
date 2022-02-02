@@ -17,8 +17,13 @@ class ConnectionStatus extends Component {
         window.removeEventListener('offline', this.updateOnlineStatus)
     }
 
+    updateOfflineStatus = e => {
+        this.changeState('offline');
+
+    }
+
     updateOnlineStatus = e => {
-        navigator.onLine ? this.changeState('online') : this.changeState('offline');
+        this.changeState('online');
 
     }
 
@@ -30,7 +35,7 @@ class ConnectionStatus extends Component {
 
     render() {
         const { status } = this.state;
-        
+
         return <div className={`status ${status === 'offline' ? 'status_offline' : ''}`}>{status}</div >
     }
 }
