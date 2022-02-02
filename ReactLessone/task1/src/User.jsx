@@ -8,7 +8,7 @@ class User extends Component {
     }
 
     componentDidMount() {
-        fetch()
+        this.fetchUser(this.props.userId)
     }
 
     fetchUser = userId => {
