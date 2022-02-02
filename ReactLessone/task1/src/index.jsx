@@ -8,5 +8,5 @@ import User from './User.jsx';
 
 const rootElement = document.querySelector('#root');
 
-ReactDOM.render(<User userId="facebook" />, rootElement);
+ReactDOM.render(<User userId="google" />, rootElement);
 

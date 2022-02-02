@@ -3,8 +3,11 @@ import React, { Component } from "react";
 
 class User extends Component {
 
-    state = {
-        user: null
+    constructor(props) {
+        super(props);
+        this.state = {
+            userData: null,
+        };
     }
 
     componentDidMount() {
