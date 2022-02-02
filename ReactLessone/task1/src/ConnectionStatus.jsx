@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 class ConnectionStatus extends Component {
     state = {
-        isOnline: true
+        status: 'online'
     }
 
 
@@ -12,27 +12,26 @@ class ConnectionStatus extends Component {
         window.addEventListener('offline', this.updateOnlineStatus)
     }
 
-
+    componentWillUnmount() {
+        window.removeEventListener('online', this.updateOnlineStatus)
+        window.removeEventListener('offline', this.updateOnlineStatus)
+    }
 
     updateOnlineStatus = e => {
-        navigator.onLine ? this.changeState(true) : this.changeState(false)
+        navigator.onLine ? this.changeState('online') : this.changeState('offline');
 
     }
 
     changeState = status => {
         this.setState({
-            isOnline: status
+            status
         })
     }
 
     render() {
-        const { isOnline } = this.state;
+        const { status } = this.state;
 
-        if (isOnline) {
-            return (< div className="status status_online" > Online</div >)
-        }
-
-        return <div className="status status_offline">Offline</div>
+        return <div className={`status status_${status}`}>{status}</div>
     }
 }
 
