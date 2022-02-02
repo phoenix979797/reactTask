@@ -10,7 +10,7 @@ class Clock extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            time: getTimeWithOffset(props.offset).toLocaleTimeString('en-US', {
+            time: getTimeWithOffset(this.props.offset).toLocaleTimeString('en-US', {
                 hour: 'numeric',
                 hour12: true,
                 minute: 'numeric',
@@ -20,9 +20,9 @@ class Clock extends Component {
     }
 
     componentDidMount() {
-        this.inteval = setInterval(() => {
+        this.interval = setInterval(() => {
             this.setState({
-                time: getTimeWithOffset(props.offset).toLocaleTimeString('en-US', {
+                time: getTimeWithOffset(this.props.offset).toLocaleTimeString('en-US', {
                     hour: 'numeric',
                     hour12: true,
                     minute: 'numeric',
