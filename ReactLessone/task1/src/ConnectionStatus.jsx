@@ -31,7 +31,7 @@ class ConnectionStatus extends Component {
     render() {
         const { status } = this.state;
 
-        return <div className={`status status_${status}`}>{status}</div>
+        return <div className={`status status__${status}`}>{status}</div>
     }
 }
 
