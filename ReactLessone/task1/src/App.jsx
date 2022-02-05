@@ -1,16 +1,14 @@
+import React from 'react';
+import UserForm from './UserForm';
 
-import React, { Component } from "react";
-import Search from "./UserForm";
-
-class App extends Component {
-
-    handleSubmit = user => {
-        console.log(user)
-    }
+class App extends React.Component {
+    createUser = (data) => {
+        console.log(data);
+    };
 
     render() {
-        return <Search onSumbit={this.handleSubmit} />
+        return <UserForm onSubmit={this.createUser} />;
     }
-};
+}
 
 export default App;
