@@ -13,7 +13,7 @@ class UserForm extends React.Component {
                 const formData = [...new FormData(this.formRef)].reduce((
                     acc, [name, value]) => ({ ...acc, [name]: value }), {});
 
-                console.log(formData);
+                this.props.onSubmit(formData);
             }}>
                 <h1 className="form-title">Profile</h1>
                 <div className="form-control">
