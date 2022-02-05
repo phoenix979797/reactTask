@@ -1,6 +1,6 @@
 
 import React, { Component } from "react";
-import Search from "./Search";
+import Search from "./UserForm";
 
 class App extends Component {
 
