@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import Search from './App.jsx';
+import Search from './Game.jsx';
 
 
 
