@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import Search from './Game.jsx';
+import App from './App.jsx';
 
 
 
 
 const rootElement = document.querySelector('#root');
 
-ReactDOM.render(<Search/>, rootElement);
+ReactDOM.render(<App userId="facebook" />, rootElement);
 
