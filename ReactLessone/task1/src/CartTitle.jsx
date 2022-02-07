@@ -7,5 +7,3 @@ const CartTitle = ({ userName, count }) => (
 );
 
 export default CartTitle;
-
-export default CartTitle;
