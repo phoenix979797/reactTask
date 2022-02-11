@@ -1,22 +1,23 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Contacts from './Contacts';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import Home from './Home';
-import PageNotFound from './PageNotFound';
 import Products from './Products';
 
 const App = () => {
     return (
-        <div className="page">
-            <BrowserRouter>
-                <Switch>
-                    <Route exact path="/">< Home /></Route>
-                    <Route path="/products"><Products /></Route>
-                    <Route path="/contacts"><Contacts /></Route>
-                    <Route path="/*">< PageNotFound /></Route>
-                </Switch>
-            </BrowserRouter>
-        </div>
+        <div className="page"> <BrowserRouter>
+            <ul className="navigation">
+                <li className="navigation__item">
+                    <Link to="/">Home</Link>
+                </li>
+                <li className="navigation__item">
+                    <Link to="/products">Products</Link>
+                </li>
+            </ul>
+            <Route exact path="/"><Home /></Route>
+            <Route path="/products"><Products /></Route>
+        </BrowserRouter>
+        </div >
     );
 };
 

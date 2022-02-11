@@ -18,3 +18,14 @@ body {
     margin: auto;
   }
 }
+
+.navigation {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    margin: 8px;
+  }
+}
