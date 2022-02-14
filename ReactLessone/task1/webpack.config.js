@@ -9,12 +9,12 @@ module.exports = (env, argv) => {
     entry: "./src/index.jsx",
     output: {
       filename: "bundle.js",
-      publicPath: '/'
     },
     module: {
       rules: [
         {
-          test: /.jsx?$/,
+          test: /.(js|jsx?)$/,
+          exclude: /node_modules/,
           use: ["babel-loader"],
         },
         {
@@ -27,6 +27,9 @@ module.exports = (env, argv) => {
         },
       ],
     },
+    resolve: {
+      extensions: [".js", ".jsx"],
+    },
     plugins: [
       new webpack.ProgressPlugin(),
       new CleanWebpackPlugin(),
@@ -34,14 +37,17 @@ module.exports = (env, argv) => {
         template: "./src/index.html",
       }),
     ],
-    resolve: {
-      extensions: [".js", ".jsx"],
-    },
     devServer: {
-      hot: true,
       historyApiFallback: true,
+      open: true,
+      hot: true,
+      port: 8080,
     },
   };
+
+  if (isProduction) {
+    config.plugins.push(new webpack.HotModuleReplacementPlugin());
+  }
 
   if (isProduction) {
     config.plugins.push(
