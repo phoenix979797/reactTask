@@ -9,3 +9,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.status {
+  padding: 8px;
+  border: 2px solid #eee;
+  border-radius: 8px;
+
+  &_offline {
+    border-color: #f00;
+  }
+}
