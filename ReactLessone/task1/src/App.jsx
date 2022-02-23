@@ -1,27 +1,32 @@
-import React, { Component, useState } from "react";
-import Clock from './Clock.jsx'
-
-
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Users from './Users';
+import Home from './Home';
 
 const App = () => {
-    const [visible, setVisible] = useState(true)
-
-    const toggle = () => {
-        setVisible(!visible)
-    }
-
 
     return (
-        <>
-            <button onClick={toggle}>Toggle</button>
-            <div>
-                {visible &&
-                    <><Clock location='New York' offset={-5} />
-                        <Clock location='Kyiv' offset={2} />
-                        <Clock location='London' offset={0} /></>}
+        <Router>
+            <div className="page">
+                <ul className="navigation">
+                    <li className="navigation__item">
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li className="navigation__item">
+                        <Link to="/users">Users</Link>
+                    </li>
+                </ul>
+
+                <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route path="/users" component={Users} />
+                </Switch>
             </div>
-        </>
+        </Router >
     )
+
 }
 
 
